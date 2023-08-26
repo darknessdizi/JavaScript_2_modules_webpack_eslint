@@ -1,0 +1,36 @@
+{
+  "name": "work_task_2",
+  "version": "1.0.0",
+  "description": "1. Каждая задача выполняется в виде отдельного проекта с собственным репозиторием на GitHub.\r 2. На эти задачи не распространяется требование отсутствия ошибок в ESLint, но вы можете его запустить и изучить появившиеся ошибки.\r 3. Решения должны быть построены на базе [шаблона webpack](/ci-template) (для задач под номерами 1 и 2).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "start": "http-server ./dist",
+    "serve": "webpack serve --mode development",
+    "lint": "eslint .",
+    "build-babel": "babel dist -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "html-webpack-plugin": "^5.5.3",
+    "http-server": "^14.1.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "raw-loader": "^4.0.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "core-js": "^3.32.1"
+  }
+}
